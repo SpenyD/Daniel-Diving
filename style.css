@@ -91,18 +91,24 @@ h2 {
 /* ===== IMAGE SECTIONS ===== */
 .image-row {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     gap: 20px;
     margin-top: 20px;
 }
 
 .image-row img {
-    width: 100%;
+    width: 280px;          /* Fixes the huge size */
+    height: 180px;         /* Keeps them even */
+    object-fit: cover;     /* Crops nicely */
     border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Makes them look professional */
 }
 
-/* Responsive fix */
+/* Mobile layout */
 @media (max-width: 768px) {
-    .hero-content h1 { font-size: 2.2rem; }
-    .hero-content p { font-size: 1rem; }
-    .image-row { flex-direction: column; }
+    .image-row img {
+        width: 100%;
+        height: auto;
+    }
 }

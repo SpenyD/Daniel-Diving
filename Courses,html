@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Courses — Daniel Diving</title>
+  <link rel="stylesheet" href="courses.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+  <header>
+    <h1>Our Courses</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="instructor.html">Instructor Info</a>
+    <a href="intro.html">Intro to Diving</a>
+    <a href="classes.html">Types of Classes</a>
+    <a href="example.html">Example Class</a>
+    <a href="projects.html">Diving Projects</a>
+    <a href="courses.html">Courses</a>
+  </nav>
+
+  <main>
+    <div class="cards-container">
+
+      <div class="card">
+        <h2>Try SCUBA</h2>
+        <p>Get a taste of underwater exploration: two hours to breathe underwater and experience total weightlessness.</p>
+        <a class="btn" href="try-scuba.html">Find Out More</a>
+      </div>
+
+      <div class="card">
+        <h2>SCUBA Certification (Open Water)</h2>
+        <p>Earn your OW Diver certification — dive confidently and start your underwater journey.</p>
+        <a class="btn" href="open-water.html">Find Out More</a>
+      </div>
+
+      <div class="card">
+        <h2>SCUBA Skills Update</h2>
+        <p>Brush up on your diving skills if you’ve been out of the water for a while, or want to refresh safety practices.</p>
+        <a class="btn" href="skills-update.html">Find Out More</a>
+      </div>
+
+      <div class="card">
+        <h2>Snorkeling Lessons</h2>
+        <p>Learn snorkeling basics — great for beginners and a perfect intro to underwater breathing.</p>
+        <a class="btn" href="snorkeling.html">Find Out More</a>
+      </div>
+
+      <div class="card">
+        <h2>Freediving Courses</h2>
+        <p>Explore breath-hold diving and underwater tranquility without heavy gear — for those seeking pure diving freedom.</p>
+        <a class="btn" href="freediving.html">Find Out More</a>
+      </div>
+
+      <div class="card">
+        <h2>Advanced / Specialty Courses</h2>
+        <p>For experienced divers: specialties like deep diving, wreck diving, wreck navigation, and more.</p>
+        <a class="btn" href="specialty.html">Find Out More</a>
+      </div>
+
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Daniel Diving — All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

@@ -237,12 +237,13 @@ h2 {
 .multi-wave {
     width: 100%;
     line-height: 0;
-    background: #eaf7ff;
+    margin-top: 60px;
+    margin-bottom: -5px; /* smooth transition */
 }
 
 .multi-wave svg {
     display: block;
     width: 100%;
-    height: 110px;
+    height: 150px;
 }
 

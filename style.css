@@ -163,3 +163,73 @@ h2 {
 }
 
 
+/* ===== CONTACT FORM - CLEAN MODERN STYLE ===== */
+
+.footer {
+    background-color: #eaf7ff; /* soft ocean blue background */
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.contact-card {
+    background: white;
+    padding: 40px;
+    max-width: 500px;
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.contact-card h2 {
+    color: #004f7c;
+    margin-bottom: 10px;
+}
+
+.contact-card p {
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #c5dbe8;
+    font-size: 1em;
+}
+
+.contact-form textarea {
+    height: 130px;
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: #036fa6;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.1em;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+    background-color: #0290d4;
+}
+
+.footer-copy {
+    margin-top: 25px;
+    font-size: 0.85em;
+    color: #666;
+}

@@ -233,3 +233,17 @@ h2 {
     font-size: 0.85em;
     color: #666;
 }
+
+
+.wave-container {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    background: #eaf7ff; /* light ocean background */
+}
+
+.wave-container svg {
+    display: block;
+    width: 100%;
+    height: 120px;
+}

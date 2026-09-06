@@ -396,6 +396,26 @@ section ul {
     margin-bottom: 18px;
 }
 
+.card-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 16px;
+    margin: 0 0 14px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--teal);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+.card-prereq {
+    display: block;
+    font-size: 0.85rem;
+    color: #667;
+    font-style: italic;
+    margin-bottom: 16px;
+}
+
 /* Checklist-style list — good for certifications, skills, gear lists */
 .feature-list {
     list-style: none;

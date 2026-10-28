@@ -87,8 +87,10 @@
 
         <form action="https://formsubmit.co/4695ebd5b13d0cec6c66b7c9f0a7e4db" method="POST" class="contact-form">
 
-            <!-- Prevent spam -->
-            <input type="hidden" name="_captcha" value="false">
+            <!-- Spam protection: the captcha is ON by default (don't add _captcha=false).
+                 _honey is a hidden trap field; bots fill it in, people never see it,
+                 and FormSubmit silently drops any submission where it has a value. -->
+            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
 
             <!-- Redirect to thank-you page -->
             <input type="hidden" name="_next" value="https://danieldiving.com/thank-you.html">

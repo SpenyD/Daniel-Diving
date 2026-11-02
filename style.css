@@ -69,7 +69,7 @@ nav a:hover::after {
 
 /* ===== HEADER / HERO IMAGE ===== */
 .hero {
-    background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e');
+    background-image: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1600&q=70');
     background-size: cover;
     background-position: center;
     height: 78vh;
@@ -160,7 +160,7 @@ section ul {
 
 /* ===== BUTTONS ===== */
 .btn {
-    background: linear-gradient(135deg, var(--coral), var(--coral-dark));
+    background: linear-gradient(135deg, #d63d1c, #bd3216);
     color: white;
     padding: 14px 32px;
     text-decoration: none;
@@ -252,7 +252,7 @@ section ul {
 
 .path-btn {
     display: inline-block;
-    background: linear-gradient(135deg, var(--teal), #009ba3);
+    background: linear-gradient(135deg, #00838c, #006970);
     color: white;
     padding: 13px 26px;
     border-radius: 50px;
@@ -306,7 +306,7 @@ section ul {
 }
 
 .contact-card .contact-phone a {
-    color: var(--coral-dark);
+    color: #bd3216;
     font-weight: 700;
     text-decoration: none;
 }
@@ -349,7 +349,7 @@ section ul {
 }
 
 .contact-form button {
-    background: linear-gradient(135deg, var(--coral), var(--coral-dark));
+    background: linear-gradient(135deg, #d63d1c, #bd3216);
     color: white;
     padding: 14px;
     border: none;
@@ -423,7 +423,7 @@ section ul {
     margin: 0 0 14px;
     font-size: 0.8rem;
     font-weight: 700;
-    color: var(--teal);
+    color: #007a82;
     text-transform: uppercase;
     letter-spacing: 0.03em;
 }

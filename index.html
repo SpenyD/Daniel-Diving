@@ -85,20 +85,27 @@
         <h2>Contact Daniel Diving</h2>
         <p>Have questions or want to start your diving journey? Send us a message!</p>
 
-        <form action="https://formsubmit.co/4695ebd5b13d0cec6c66b7c9f0a7e4db" method="POST" class="contact-form">
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" id="contact-form">
 
-            <!-- Spam protection: the captcha is ON by default (don't add _captcha=false).
-                 _honey is a hidden trap field; bots fill it in, people never see it,
-                 and FormSubmit silently drops any submission where it has a value. -->
-            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+            <!-- Web3Forms public access key (safe to keep in the page) -->
+            <input type="hidden" name="access_key" value="271eb046-b2e9-484c-a29c-bd3b58c52e7a">
+
+            <!-- Subject line of the email you receive -->
+            <input type="hidden" name="subject" value="New message from danieldiving.com">
 
             <!-- Redirect to thank-you page -->
-            <input type="hidden" name="_next" value="https://danieldiving.com/thank-you.html">
+            <input type="hidden" name="redirect" value="https://danieldiving.com/thank-you.html">
+
+            <!-- Spam trap: hidden checkbox that bots tick and people never see -->
+            <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
 
             <input type="text" name="name" placeholder="Your First Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
             <input type="tel" name="phone-number" placeholder="Your Phone Number">
             <textarea name="message" placeholder="Your Message" required></textarea>
+
+            <!-- hCaptcha (needs hCaptcha enabled for this form in the Web3Forms dashboard) -->
+            <div class="h-captcha" data-captcha="true"></div>
 
             <button type="submit">Send Message</button>
         </form>
@@ -107,10 +114,23 @@
     </div>
 
 
-    
-    
+
+
 </footer>
 
-    
+<!-- Web3Forms captcha script -->
+<script src="https://web3forms.com/client/script.js" async defer></script>
+
+<!-- Stop the form from sending until the captcha has been completed -->
+<script>
+document.getElementById('contact-form').addEventListener('submit', function (e) {
+    var response = this.querySelector('textarea[name=h-captcha-response]');
+    if (!response || !response.value) {
+        e.preventDefault();
+        alert('Please complete the captcha before sending. If you don\'t see it, try opening this page directly in Safari or Chrome.');
+    }
+});
+</script>
+
 </body>
 </html>

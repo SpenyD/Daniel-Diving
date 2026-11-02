@@ -323,6 +323,11 @@ section ul {
     box-shadow: 0 0 0 3px rgba(255, 93, 58, 0.15);
 }
 
+.contact-form .h-captcha {
+    display: flex;
+    justify-content: center;
+}
+
 .contact-form textarea {
     height: 130px;
     resize: vertical;

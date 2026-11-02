@@ -300,6 +300,21 @@ section ul {
     margin-bottom: 25px;
 }
 
+.contact-card .contact-phone {
+    margin-top: -10px;
+    font-size: 0.95rem;
+}
+
+.contact-card .contact-phone a {
+    color: var(--coral-dark);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.contact-card .contact-phone a:hover {
+    text-decoration: underline;
+}
+
 .contact-form {
     display: flex;
     flex-direction: column;
